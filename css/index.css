@@ -1,0 +1,149 @@
+/* 字體 */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanstc/v24/-nFlOG829Oofr2wohFbTp9i9WyEJ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanstc/v24/-nFkOG829Oofr2wohFbTp9i9kwMvDQ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanstc/v24/-nFkOG829Oofr2wohFbTp9i9ywIvDQ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanstc/v24/-nFkOG829Oofr2wohFbTp9i9gwQvDQ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanstc/v24/-nFkOG829Oofr2wohFbTp9i9uwYvDQ.otf) format('opentype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+body {
+  background-color: #333;
+}
+.container {
+  width: 500px;
+  height: 700px;
+  margin: 100px auto 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+}
+.container > div {
+  margin: 20px 0 5px;
+}
+.container > span {
+  color: #e9e9e9;
+  position: relative;
+  align-self: flex-end;
+  margin-right: 80px;
+  font-size: 12px;
+  font-weight: 100;
+}
+.container .logo {
+  margin-top: 70px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .logo .img img {
+  width: 50px;
+}
+.container .logo .logo-txt {
+  color: #fff;
+}
+.container .username,
+.container .email,
+.container .password,
+.container .confirm-password,
+.container .btn {
+  width: 70%;
+  border-radius: 50px;
+  padding: 15px;
+}
+.container .username,
+.container .email,
+.container .password,
+.container .confirm-password {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+.container .username label,
+.container .email label,
+.container .password label,
+.container .confirm-password label {
+  margin: 0 10px;
+}
+.container .username input,
+.container .email input,
+.container .password input,
+.container .confirm-password input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  flex-grow: 1;
+}
+.container .confirm-password {
+  justify-content: center;
+  align-items: center;
+}
+.container .confirm-password i {
+  margin-left: 20px;
+}
+.container .confirm-password label {
+  flex-shrink: 0;
+}
+.container .confirm-password input {
+  width: 80%;
+}
+.container .btn {
+  margin-top: 20px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  background: linear-gradient(60deg, #FF5F6D, #DD4A48, #DD4A48, #FF5F6D);
+}
+.container .btn:hover {
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+.container .error-msg {
+  margin-bottom: 15px;
+  color: #DD4A48;
+  padding: 3px 10px 5px;
+  border-radius: 20px;
+}
+.container .prompt-msg {
+  color: #0082c8;
+}
+/*# sourceMappingURL=./index.css.map */

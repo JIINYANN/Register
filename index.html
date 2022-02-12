@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://use.fontawesome.com/7908478e60.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+  <title>Register</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="logo">
+        <div class="img">
+          <a href="javascript:;"> <img src="./imgs/logo.png" alt="logo"></a>
+        </div>
+        <div class="logo-txt">
+          <span>YANN MUSEUM</span>
+        </div>
+       
+      </div>
+      <div class="username">
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+        <label for="username">Username</label>
+        <input type="text" id="username" autocomplete="off">
+      </div>
+      <span>5 ~ 12 characters , including underscore</span>
+      <div class="email">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <label for="email">Email</label>
+        <input type="text" id="email" autocomplete="off">
+      </div>
+      <span>enter your email</span>
+     <div class="password">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <label for="password">Password</label>
+      <input type="password" id="password">
+     </div>
+     <span>5 ~ 12 characters , including underscore</span>
+     <div class="confirm-password">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password">
+     </div>
+     <span>re-enter your password</span>
+     <div class="msg-area">
+       <span id="error-msg"></span>
+      </div>
+     
+     <button id="btn" class="btn">Register</button>
+    </div>
+  </div>
+</body>
+</html>
