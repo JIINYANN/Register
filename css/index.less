@@ -11,13 +11,13 @@
 body{
   background-color: #333;
 }
+
 .container{
   width:500px;
   height: 700px;
   margin:100px auto 100px;
   display: flex;
   flex-direction: column;
-  // justify-content: space-around;
   align-items: center;
   border-radius: 50px;
   >div{
@@ -108,4 +108,30 @@ body{
   .prompt-msg{
     color:#0082c8;
   }
+}
+
+@media screen and(max-width:500px) {
+  .container{
+    position:relative;
+    width: 90%;
+    .logo{
+      margin-top: 0;
+    }
+    .username,.email,.password,.confirm-password{
+      flex-direction: column;
+      padding:8px;
+      font-size: 14px;
+      i{
+        display:none;
+      }
+      input{
+        text-align: center;
+      }
+    }
+    span{
+      margin:0 auto;
+    }
+  }
+  
+ 
 }

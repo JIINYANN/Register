@@ -146,4 +146,36 @@ body {
 .container .prompt-msg {
   color: #0082c8;
 }
+@media screen and (max-width: 500px) {
+  .container {
+    position: relative;
+    width: 90%;
+  }
+  .container .logo {
+    margin-top: 0;
+  }
+  .container .username,
+  .container .email,
+  .container .password,
+  .container .confirm-password {
+    flex-direction: column;
+    padding: 8px;
+    font-size: 14px;
+  }
+  .container .username i,
+  .container .email i,
+  .container .password i,
+  .container .confirm-password i {
+    display: none;
+  }
+  .container .username input,
+  .container .email input,
+  .container .password input,
+  .container .confirm-password input {
+    text-align: center;
+  }
+  .container span {
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=./index.css.map */
